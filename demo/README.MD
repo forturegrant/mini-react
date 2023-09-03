@@ -1,0 +1,6 @@
+不用ssr
+webpack在打包的时候会生成一个含有打包后生成的js和css的html，网页访问地址，访问到对应的服务器html，html只有引入js和css的script标签，
+这时候就会出现白屏，等加完js之后才会在渲染东西到页面上
+
+用ssr
+webpack在打包的时候会生成一个含有打包后生成的js和css的html，网页访问地址，用node作为中间层处理一下，先拿到只有引入js和css的script标签的html,然后用reactDomServer拿到事先要在页面上渲染的dom片段，然后往这个html里面塞，再吐到客户端上，这样就不会白屏了
