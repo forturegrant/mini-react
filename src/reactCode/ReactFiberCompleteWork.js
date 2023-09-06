@@ -4,7 +4,7 @@ import {
   createInstance,
   finalizeInitialChildren,
   prepareUpdate,
-} from "./ReactDomHostConfig";
+} from "./ReactDOMHostConfig";
 import { Update } from "./ReactFiberFlags";
 
 export function completeWork(current, workInProgress) {

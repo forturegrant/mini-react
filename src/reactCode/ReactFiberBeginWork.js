@@ -1,6 +1,6 @@
 import { HostRoot, HostComponent, FunctionComponent } from './ReactWorkTags';
 import { reconcileChildFibers, mountChildFibers } from './ReactChildFiber';
-import { shouldSetTextContent } from './ReactDomHostConfig';
+import { shouldSetTextContent } from './ReactDOMHostConfig';
 import { renderHooks } from './ReactFiberHooks';
 
 export function beginWork(current, workInProgress) {

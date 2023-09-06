@@ -1,5 +1,5 @@
 import { scheduleUpdateOnFiber } from './ReactFiberWorkLoop';
-import isFn from './utils';
+import { isFn } from './utils';
 let currentlyRenderingFiber = null;
 let workInProgressHook = null;
 
