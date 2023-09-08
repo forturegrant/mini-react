@@ -72,7 +72,7 @@ function commitMutationEffects(root) {
     }
     nextEffect = nextEffect.nextEffect;
   }
-  effectsList += 'null';
+  effectsList += ' ';
   console.log(effectsList, 'effectsList');
   console.log(finishedWork, 'finishedWork');
   root.current = finishedWork;
