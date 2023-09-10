@@ -8,13 +8,12 @@ single1.addEventListener('click', () => {
   let element = (
     <div key="title" id="title">title</div>
   )
-  console.log(element, 'element');
   ReactDOM.render(element, document.getElementById('root'));
 })
 
 single1Update.addEventListener('click', () => {
   let element = (
-    <div key="title" id="title2">title2</div>
+    <div key="title2" id="title2">title2</div>
   )
   ReactDOM.render(element, document.getElementById('root'));
 })

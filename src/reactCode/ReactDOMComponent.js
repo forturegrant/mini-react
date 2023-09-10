@@ -1,5 +1,4 @@
 export function createElement(element) {
-  console.log(element, 'element');
   return document.createElement(element);
 }
 

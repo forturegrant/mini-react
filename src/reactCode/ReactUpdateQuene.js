@@ -21,7 +21,7 @@ export function createUpdate () {
  * @param {*} update
  */
 export function enqueneUpdate (fiber, update) {
-  console.log(fiber, 'fiber');
+  // console.log(fiber, 'fiber');
   const updateQuene = fiber.updateQuene;
   const shared = updateQuene.shared;
   const pending = shared.pending;
