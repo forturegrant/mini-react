@@ -196,6 +196,7 @@ function childReconciler(shouldTrackSideEffects) {
   function mapRemainingChildren(returnFiber, currentFirstChild) {
     const existingChildren = new Map();
     let existingChild = currentFirstChild;
+    console.log(existingChild, 'existingChild');
     while (existingChild) {
       let key = existingChildren.key || existingChild.index;
       existingChildren.set(key, existingChild);
