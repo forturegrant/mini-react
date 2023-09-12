@@ -64,7 +64,6 @@ function dispatchReducerAction(
   action
 ) {
   // 兼容了 useReducer 和 useState
-  debugger;
   hook.memorizedState = reducer
     ? reducer(hook.memorizedState, action)
     : isFn(action)

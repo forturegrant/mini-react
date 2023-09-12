@@ -161,6 +161,7 @@ function collectEffectList(returnFiber, completedWork) {
       } else {
         returnFiber.firstEffect = completedWork;
       }
+      returnFiber.lastEffect = completedWork;
     }
   }
 }

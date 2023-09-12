@@ -170,6 +170,7 @@ function childReconciler(shouldTrackSideEffects) {
     // 将剩下的老fiber放去map中
     const existingChildren = mapRemainingChildren(returnFiber, oldFiber);
     for (; newIdx < newChildren.length; newIdx++) {
+      // 去map中找找有没key相同并且类型相同可以复用的老fiber 老真实DOM
       const newFiber = updateFromMap(existingChildren, returnFiber, newIdx, newChildren[newIdx]);
       if (newFiber) {
         if (newFiber.alternate) {
@@ -196,9 +197,8 @@ function childReconciler(shouldTrackSideEffects) {
   function mapRemainingChildren(returnFiber, currentFirstChild) {
     const existingChildren = new Map();
     let existingChild = currentFirstChild;
-    console.log(existingChild, 'existingChild');
     while (existingChild) {
-      let key = existingChildren.key || existingChild.index;
+      let key = existingChild.key || existingChild.index;
       existingChildren.set(key, existingChild);
       existingChild = existingChild.sibling;
     }

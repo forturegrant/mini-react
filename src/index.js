@@ -16,7 +16,7 @@ single1.addEventListener('click', () => {
 
 single1Update.addEventListener('click', () => {
   let element = (
-    <div key="title2" id="title2">title2</div>
+    <div key="title" id="title2">title2</div>
   )
   ReactDOM.render(element, document.getElementById('root'));
 })
@@ -48,5 +48,25 @@ single2Update.addEventListener('click', () => {
   )
   ReactDOM.render(element, document.getElementById('root'));
 })
+
+// single2.addEventListener('click', () => {
+//   let element = (
+//     <ul key="ul">
+//       <li key="A">A</li>
+//       <li key="B" id="B">B</li>
+//       <li key="C">C</li>
+//     </ul>
+//   )
+//   ReactDOM.render(element, document.getElementById('root'));
+// })
+
+// single2Update.addEventListener('click', () => {
+//   let element = (
+//     <ul key="ul" id="ul">
+//       <li key="B" id="B2">B2</li>
+//     </ul>
+//   )
+//   ReactDOM.render(element, document.getElementById('root'));
+// })
 
 // ReactDOM.render(element, document.getElementById('root'));
