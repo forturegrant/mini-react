@@ -1,11 +1,14 @@
 import React from './reactCode/React';
 import { ReactDOM } from './reactCode/ReactDOM';
+import { useReducer } from './reactCode/ReactFiberHooks';
 
 const single1 = document.getElementById('single1');
 const single1Update = document.getElementById('single1Update');
 
 const single2 = document.getElementById('single2');
 const single2Update = document.getElementById('single2Update');
+
+const single3 = document.getElementById('single3');
 
 single1.addEventListener('click', () => {
   let element = (
@@ -67,6 +70,21 @@ single2Update.addEventListener('click', () => {
       <li key="C">C</li>
       <li key="B">B</li>
     </ul>
+  )
+  ReactDOM.render(element, document.getElementById('root'));
+})
+
+function Test() {
+  const [count, setCount] = useReducer((x) => x + 1, 0);
+  return <button key="title2" id="title2" onClick={() => setCount(count + 1)}>{count}</button>
+}
+
+single3.addEventListener('click', () => {
+  let element = (
+    <div key="title">
+      <div key="title1" id="title">title3</div>
+      <Test />
+    </div>
   )
   ReactDOM.render(element, document.getElementById('root'));
 })
