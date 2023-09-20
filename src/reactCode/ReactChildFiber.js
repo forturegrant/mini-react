@@ -15,6 +15,7 @@ function childReconciler(shouldTrackSideEffects) {
   }
 
   function reconcileSingleElement(returnFiber, currentFirstChild, element) {
+
     const key = element.key;
     let child = currentFirstChild;
     while (child) {

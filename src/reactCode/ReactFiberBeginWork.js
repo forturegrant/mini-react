@@ -49,9 +49,9 @@ function updateHostComponent(current, workInProgress) {
 
 function updateFunctionComponent(current, workInProgress) {
   renderHooks(workInProgress);
-  const { type, props } = workInProgress;
-  const children = type(props);
-  reconcileChildren(current, workInProgress, children);
+  const { type, pendingProps } = workInProgress;
+  const children = type(pendingProps);
+  reconcileChildren(current, workInProgress, children);;
   return workInProgress.child;
 }
 
