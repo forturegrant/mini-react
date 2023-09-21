@@ -69,6 +69,7 @@ function dispatchReducerAction(
     : isFn(action)
       ? action()
       : action;
+  console.log(fiber, 'fiber');
   // fiber.alternate = { ...fiber };
   // 当前函数组件的fiber
   scheduleUpdateOnFiber(fiber);
