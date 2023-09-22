@@ -1,6 +1,6 @@
 import React from './reactCode/React';
 import { ReactDOM } from './reactCode/ReactDOM';
-import { useReducer } from './reactCode/ReactFiberHooks';
+import { useReducer, useState } from './reactCode/ReactFiberHooks';
 
 const single1 = document.getElementById('single1');
 const single1Update = document.getElementById('single1Update');
@@ -76,7 +76,11 @@ single2Update.addEventListener('click', () => {
 
 function Test() {
   const [count, setCount] = useReducer((x) => x + 1, 0);
-  return <button key="title2" id="title2" onClick={() => setCount(count + 1)}>{count}</button>
+  const [count2, setCount2] = useState(0);
+  return <div>
+    <button key="title2" id="title2" onClick={() => setCount(count + 1)}>{count}</button>
+    <button onClick={() => setCount2(count2 + 1)}>{count2}</button>
+  </div>
 }
 
 single3.addEventListener('click', () => {
