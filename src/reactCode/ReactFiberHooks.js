@@ -5,7 +5,6 @@ let workInProgressHook = null;
 
 // todo 获取当前hook
 function updateWorkInProgressHook() {
-  debugger;
   let hook;
 
   const current = currentlyRenderingFiber.alternate;
@@ -40,7 +39,6 @@ function updateWorkInProgressHook() {
 // 函数组件执行的时候
 export function renderHooks(workInProgress) {
   currentlyRenderingFiber = workInProgress;
-  console.log(currentlyRenderingFiber, 'currentlyRenderingFiber');
   workInProgressHook = null;
 }
 
