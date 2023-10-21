@@ -1,18 +1,12 @@
-# 启动
+#### 启动
 
 直接运行npm start，访问 http://localhost:3000 即可
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### 目录划分
+- docs。react 相关知识文档&源码剖析目录
+- src。代码实现
+- reactCode。手写 react 源码目录，对应的官方 react 版本为 16.0.1
 
-## Available Scripts
+#### React源码文档
+- [简单实现一个自己的react，了解虚拟dom和react diff算法]()
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
