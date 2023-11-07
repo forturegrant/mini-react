@@ -96,4 +96,6 @@ single4.addEventListener('click', () => {
   ReactDOM.render(element, document.getElementById('root'));
 })
 
+console.log('test');
+
 // ReactDOM.render(element, document.getElementById('root'));
